@@ -7,8 +7,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+     <div class="container">
+    <h1>Simple Filter Table</h1>
+    <p>Search box se table ko filter karo — koi bhi column match karega.</p>
+
+    <div class="controls">
+      <input id="tableSearch" type="search" placeholder="Search... (e.g. name, city, role)">
+      <button id="clearBtn" class="secondary" type="button">Clear</button>
+      <button id="showAllBtn" type="button">Show All</button>
+    </div>
+
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>City</th>
+          <th>Company</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ali Khan</td>
+          <td>Developer</td>
+          <td>Karachi</td>
+          <td>TechCorp</td>
+        </tr>
+        <tr>
+          <td>Sara Ahmed</td>
+          <td>Designer</td>
+          <td>Lahore</td>
+          <td>DesignHub</td>
+        </tr>
+        <tr>
+          <td>Omar Farooq</td>
+          <td>Manager</td>
+          <td>Islamabad</td>
+          <td>BizWorks</td>
+        </tr>
+        <tr>
+          <td>Fatima Noor</td>
+          <td>Content Writer</td>
+          <td>Karachi</td>
+          <td>WriteRight</td>
+        </tr>
+        <tr>
+          <td>Hassan Mir</td>
+          <td>Developer</td>
+          <td>Multan</td>
+          <td>CodeBase</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="noResults" class="no-results">No matching rows found.</div>
+  </div>
 
     <script src="app.js"></script>
 </body>
 </html>
+
+
